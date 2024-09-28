@@ -3,7 +3,7 @@ class Character ():
         self.__username = username
         self.__hp = 100
         self.__mana = 100
-        self.__damage = 50
+        self.__damage = 5
         self.__str = 0
         self.__vit = 0
         self.__int = 0
