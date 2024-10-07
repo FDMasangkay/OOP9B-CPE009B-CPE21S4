@@ -1,5 +1,3 @@
-print("hello")
-
 from tkinter import *
 
 class MyWindow:
