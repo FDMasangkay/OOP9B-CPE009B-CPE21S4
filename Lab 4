@@ -19,3 +19,5 @@ if __name == '__main__':
     app = QApplication(sys.argv)
     Main = App()
     sys.exit(app.exec_())
+
+# self.textbox.setText("Set This text value")
