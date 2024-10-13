@@ -20,4 +20,3 @@ if __name == '__main__':
     Main = App()
     sys.exit(app.exec_())
 
-# self.textbox.setText("Set This text value")
