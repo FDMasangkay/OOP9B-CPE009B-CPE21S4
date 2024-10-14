@@ -23,7 +23,7 @@ class myWindow:
 
         self.Label5 = Label(win, text="Password: ")
         self.Label5.place(x=100, y=160)
-        self.Entry5 = Entry(win, bd=1, show = "*")
+        self.Entry5 = Entry(win, bd=1,  show = "*")
         self.Entry5.place(x=170, y=160)
 
         self.Label6 = Label(win, text="Email Address: ")
@@ -51,5 +51,21 @@ class myWindow:
         self.Entry7.delete(0, 'end')
 
     def submit(self):
-        messagebox.showinfo("Submission", "Successfully submitted!")
+        # Gather all entries
+        entries = {
+            "First Name": self.Entry2.get(),
+            "Last Name": self.Entry3.get(),
+            "Username": self.Entry4.get(),
+            "Password": self.Entry5.get(),
+            "Email": self.Entry6.get(),
+            "Contact Number": self.Entry7.get()
+        }
 
+        # Check if any entry is empty
+        for field, value in entries.items():
+            if not value:
+                messagebox.showwarning("Input Error", f"{field} is required!")
+                return
+
+        # If all entries are filled, show success message
+        messagebox.showinfo("Success", "Sucessfully Submitted!")
