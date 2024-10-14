@@ -23,7 +23,7 @@ class myWindow:
 
         self.Label5 = Label(win, text="Password: ")
         self.Label5.place(x=100, y=160)
-        self.Entry5 = Entry(win, bd=1)
+        self.Entry5 = Entry(win, bd=1, show = "*")
         self.Entry5.place(x=170, y=160)
 
         self.Label6 = Label(win, text="Email Address: ")
