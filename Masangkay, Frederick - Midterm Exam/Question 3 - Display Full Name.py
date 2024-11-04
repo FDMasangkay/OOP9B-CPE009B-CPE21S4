@@ -1,5 +1,4 @@
 from tkinter import *
-from tkinter import messagebox
 
 class myWindow:
     def __init__ (self, win):
@@ -17,7 +16,7 @@ class myWindow:
     def fullName (self):
         entry = self.Entry1.get()
         result = entry
-        self.Entry2.insert(END, str(result))
+        self.Entry2.insert(END, result)
 
 window = Tk()
 MyWin = myWindow(window)
